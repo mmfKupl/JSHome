@@ -1,0 +1,25 @@
+var str = prompt('Введите выражение для подсчета: ');
+var num1 = '', num2 = '';
+var ii;
+
+for(var i = 0; i < str.length; i++){
+	if(str[i] == '+' || str[i] == '-' || str[i] == '*' || str[i] == '/'){
+		ii = i;
+		break;
+	}
+	else num1 += str[i];
+}
+for(var i = ii+1; i < str.length; i++)
+	num2 += str[i];	
+
+num1 = 1*num1;
+num2 = 1*num2;
+
+var sstr = str + '=';
+
+if(str[ii] == '+') sstr += (num1 + num2);
+else if(str[ii] == '-') sstr += (num1 - num2);
+else if(str[ii] == '*') sstr += (num1 * num2);
+else if(str[ii] == '/') sstr += (num1 / num2);
+else sstr = "Неправильный оператор!";
+alert(sstr);
