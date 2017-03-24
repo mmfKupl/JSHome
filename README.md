@@ -1,2 +1,1 @@
-# JSHome
-Homework
+# JSHome Куплевич Иван
