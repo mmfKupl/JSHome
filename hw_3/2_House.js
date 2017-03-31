@@ -11,20 +11,20 @@ var house={
 
  	name1: [], 
  	flats: [],
- 	addTenant: function(name, number){	
+ 	addPeople: function(name, number){	
  		if(isFinite(number) && (number <= this.flats.length) && number ){
-	 		this.name1.push({name: name, flatNumber: number});
+	 		this.name1.push({name: name, flatN: number});
 	 		this.flats[number-1].name1.push(name);
 	 	}
  	},
- 	cleanFlat: function(number){
+ 	clF: function(number){
  		if(typeof (arguments[0]) == "undefined"){
  			var number = parseInt(prompt("Vvedite kvartiru: "));
  		}
  		if(isFinite(number) && (number <= this.flats.length) && number){
 	 		 this.flats[number-1].name1.length = 0;
 	 		 for(var i = 0; i < this.name1.length; i++){
-	 		 	if(this.name1[i].flatNumber == number){
+	 		 	if(this.name1[i].flatN == number){
 	 		 		this.name1.splice(i, 1);
 	 		 		i--;
 	 		 	}
@@ -35,7 +35,7 @@ var house={
  		}
 
  	},
- 	outputListOfname1: function(number){
+ 	outputname1: function(number){
  		if(typeof (arguments[0]) == "undefined"){
  			var number = parseInt(prompt("Vvedite kvartiru: "));
  		}
@@ -51,7 +51,7 @@ var house={
 	 		console.error("oshibka");
 	 	}
  	},
- 	calculateCost: function(sum){
+ 	calcusum: function(sum){
  		if(typeof (arguments[0]) == "undefined"){
  			var sum = parseFloat(prompt("vvedite sum: "));
  		}
@@ -61,12 +61,12 @@ var house={
 
 	 		this.flats.forEach(function(e){
 	 			if(e.name1.length){
-	 				totalSquare +=e.square;
+	 				totalSquare +=e.sq;
 	 			}
 	 		});
 	 		this.flats.forEach(function(e){
 	 			if(e.name1.length){
-	 				var cost = sum / totalSquare * e.square / e.name1.length;
+	 				var cost = sum / totalSquare * e.sq / e.name1.length;
 	 				e.name1.forEach(function(c){
 	 					listOfCost.push({name: c, cost: cost});
 	 				})
@@ -85,8 +85,8 @@ var house={
 
 for(var i = 0; i < n; i++){
 	house.flats[i] = {
-		square: parseInt(Math.random()*20+20),
-		level: parseInt(Math.random()*n/4+1),
+		sq: parseInt(Math.random()*20+20),
+		lvl: parseInt(Math.random()*n/4+1),
 		name1: []
 	}
 }
@@ -94,20 +94,26 @@ for(var i = 0; i < n; i++){
 for(var i=0; i<Name.length; i++){
 	house.name1[i] = {
 		name: Name[i],
-		flatNumber: parseInt(Math.random()*1000%n+1)
+		flatN: parseInt(Math.random()*1000%n+1)
 	}
-	house.flats[house.name1[i].flatNumber-1].name1.push(Name[i]) ;
+	house.flats[house.name1[i].flatN-1].name1.push(Name[i]) ;
 }
 console.log(house);
-house.outputListOfname1(1);
+house.outputname1(1);
 console.log("kol-vo ludey v house: " + house.name1.length);
-house.addTenant("Alex", 1);
-house.outputListOfname1(1);
+
+house.addPeople("Alex", 1);
+
+house.outputname1(1);
 console.log("kol-vo ludey v house: " + house.name1.length);
-house.cleanFlat(1);
-house.outputListOfname1(1);
+
+house.clF(1);
+
+house.outputname1(1);
 console.log("kol-vo ludey v house: " + house.name1.length);
-house.calculateCost(800);
+
+house.calcusum(800);
+
 console.log(house);
 
 

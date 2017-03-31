@@ -3,7 +3,7 @@ var Name = ["Bob","Carlton","Gordon",
 "Armand","Jamal","Andrew",
 "Matthew","Mark","Gerald","Ivan", 
 "Pavel", "George", "Vladimir", "Mary", 
-"Yan", "Roman",];
+"Yan", "Roman"];
 
 var City = ["Minsk", "Mogilev", "Grogno", "Gomel", "Brest"
 , "Vitebsk"];
