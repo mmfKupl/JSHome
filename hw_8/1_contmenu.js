@@ -1,15 +1,16 @@
-﻿var contmenu = document.getElementById('s');
-var div = document.getElementById('f');
+﻿var div = document.getElementById('f');
+var contmenu = document.getElementById('s');
 
-div.addEventListener('click', function(){ div.style.display = "none"; });
-contmenu.addEventListener('click', function(e){ e.stopPropagation(); });
 
-document.addEventListener('contextmenu', function(e){
+div.onclick = function(){ div.style.display = "none"; };
+contmenu.onclick = function(e) { e.stopPropagation(); };
+
+document.oncontextmenu = function(e) {
 	e.preventDefault();
 	contmenu.style.top = e.clientY + 'px';
 	contmenu.style.left = e.clientX + 'px';
 	div.style.display = "block";
-});
+};
 
 var a = contmenu.getElementsByTagName('a');
 for(var i = 0; i < a.length; i++){
