@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+ 	<title>myjava</title>
+	<style type="text/css">
+ 	.menu{
+ 		background: #BBBBBB;
+ 		color: white;
+ 		width: 250px;
+ 	}
+ 	.menu > li.active > ul.active{
+ 		background-color: #921111;
+ 	}
+ 	.menu > li > ul.active > li.active{
+ 		background-color: #C3EF4E;
+ 	}
+	
+ 	ul{
+ 		padding: 0;
+ 	}
+ 	ul ul{
+ 		display: none;
+ 	}
+ 	li{
+ 		list-style: none;
+ 		padding: 5px;
+
+ 	}
+ 	.active{
+ 		display: block;
+ 	}
+ 
+ </style>
+ </head>
+ <body>
+ 	<ul class = "menu">
+ 		<li>Пункт 1
+ 			<ul>
+ 				<li>Подпункт 1.1
+					<ul>
+		 				<li>Подпункт 1.1.1</li>
+		 				<li>Подпункт 1.1.2</li>
+		 				<li>Подпункт 1.1.3</li>
+	 				</ul>
+				</li>
+ 				<li>Подпункт 1.2
+					<ul>
+		 				<li>Подпункт 1.2.1</li>
+		 				<li>Подпункт 1.2.2</li>
+		 				<li>Подпункт 1.2.3</li>
+	 				</ul>
+				</li>
+ 				<li>Подпункт 1.3
+					<ul>
+		 				<li>Подпункт 1.3.1</li>
+		 				<li>Подпункт 1.3.2</li>
+		 				<li>Подпункт 1.3.3</li>
+	 				</ul>
+				</li>
+ 			</ul>
+ 		</li>
+ 		<li>Пункт 2
+			<ul>
+		 		<li>Подпункт 2.1</li>
+					<li>Подпункт 2.2 
+			 		<ul>
+		 				<li>Подпункт 2.2.1</li>
+		 				<li>Подпункт 2.2.2
+			 				<ul>
+				 				<li>Подпункт 2.2.2.1</li>
+			 				</ul>
+		 				</li>
+		 				<li>Подпункт 2.2.3</li>
+					</ul>
+				</li>
+		 		<li>Подпункт 2.3</li>
+	 		</ul>
+		</li>
+ 		<li>Пункт 3
+ 			<ul>
+		 		<li>Подпункт 3.1</li>
+					<li>Подпункт 3.2 
+			 		<ul>
+		 				<li>Подпункт 3.2.1</li>
+		 				<li>Подпункт 3.2.2
+			 				<ul>
+				 				<li>Подпункт 3.2.2.1</li>
+				 				<li>Подпункт 3.2.2.2</li>
+				 				<li>Подпункт 3.2.2.3</li>
+			 				</ul>
+		 				</li>
+		 				<li>Подпункт 3.2.3</li>
+					</ul>
+				</li>
+		 		<li>Подпункт 3.3
+					<ul>
+		 				<li>Подпункт 3.3.1</li>
+		 				<li>Подпункт 3.3.2</li>
+		 				<li>Подпункт 3.3.3</li>
+	 				</ul>
+				</li>
+	 		</ul>
+ 		</li>
+ 	</ul>
+ 	<script src="3_menu.js"></script>
+
+ </body>
+ </html>
