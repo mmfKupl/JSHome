@@ -1,6 +1,10 @@
 ﻿var input = document.getElementById("first");
+var input1 = document.getElementById("ffirst");
 var but1 = document.getElementById("but");
+var but2 = document.getElementById("bbut");
+
 var td = document.getElementById("second");
+var td2 = document.getElementById("ssecond");
 //переводит в другую раскладку и озеркаливает
 var shifr = function(){
 	var result = input.value.split("");
@@ -78,9 +82,81 @@ var shifr = function(){
 	td.innerText = str;
 }
 
+var deshifr = function(){
+	var result = input1.value.split("");
+	for(var i = 0; i < result.length; i++){
+		switch(result[i]){
+			case 'q' : result[i] = 'й'; break;
+			case 'w' : result[i] = 'ц'; break;
+			case 'e' : result[i] = 'у'; break;
+			case 'r' : result[i] = 'к'; break;
+			case 't' : result[i] = 'е'; break;
+			case 'y' : result[i] = 'н'; break;
+			case 'u' : result[i] = 'г'; break;
+			case 'i' : result[i] = 'ш'; break;
+			case 'o' : result[i] = 'щ'; break;
+			case 'p' : result[i] = 'з'; break;
+			case '[' : result[i] = 'х'; break;
+			case ']' : result[i] = 'ъ'; break;
+			case 'a' : result[i] = 'ф'; break;
+			case 's' : result[i] = 'ы'; break;
+			case 'd' : result[i] = 'в'; break;
+			case 'f' : result[i] = 'а'; break;
+			case 'g' : result[i] = 'п'; break;
+			case 'h' : result[i] = 'р'; break;
+			case 'j' : result[i] = 'о'; break;
+			case 'k' : result[i] = 'л'; break;
+			case 'l' : result[i] = 'д'; break;
+			case ';' : result[i] = 'ж'; break;
+			case "'" : result[i] = "э"; break;
+			case 'z' : result[i] = 'я'; break;
+			case 'x' : result[i] = 'ч'; break;
+			case 'c' : result[i] = 'с'; break;
+			case 'v' : result[i] = 'м'; break;
+			case 'b' : result[i] = 'и'; break;
+			case 'n' : result[i] = 'т'; break;
+			case 'm' : result[i] = 'ь'; break;
+			case ',' : result[i] = 'б'; break;
+			case '.' : result[i] = 'ю'; break;
+			case 'Q' : result[i] = 'Й'; break;
+			case 'W' : result[i] = 'Ц'; break;
+			case 'E' : result[i] = 'У'; break;
+			case 'R' : result[i] = 'К'; break;
+			case 'T' : result[i] = 'Е'; break;
+			case 'Y' : result[i] = 'Н'; break;
+			case 'U' : result[i] = 'Г'; break;
+			case 'I' : result[i] = 'Ш'; break;
+			case 'O' : result[i] = 'Щ'; break;
+			case 'P' : result[i] = 'З'; break;
+			case '{' : result[i] = 'Х'; break;
+			case '}' : result[i] = 'Ъ'; break;
+			case 'A' : result[i] = 'Ф'; break;
+			case 'S' : result[i] = 'Ы'; break;
+			case 'D' : result[i] = 'В'; break;
+			case 'F' : result[i] = 'А'; break;
+			case 'G' : result[i] = 'П'; break;
+			case 'H' : result[i] = 'Р'; break;
+			case 'J' : result[i] = 'О'; break;
+			case 'K' : result[i] = 'Л'; break;
+			case 'L' : result[i] = 'Д'; break;
+			case ';' : result[i] = 'Ж'; break;
+			case '"' : result[i] = 'Э'; break;
+			case 'Z' : result[i] = 'Я'; break;
+			case 'X' : result[i] = 'Ч'; break;
+			case 'C' : result[i] = 'С'; break;
+			case 'V' : result[i] = 'М'; break;
+			case 'B' : result[i] = 'И'; break;
+			case 'N' : result[i] = 'Т'; break;
+			case 'M' : result[i] = 'Ь'; break;
+			case '<' : result[i] = 'Б'; break;
+			case '>' : result[i] = 'Ю'; break;			
+		}
+	}
+
+	var str = result.reverse().join("");
+
+	td2.innerText = str;
+}
+
 but1.addEventListener("click", shifr);
-
-
-
-
- 
+but2.addEventListener("click", deshifr);
