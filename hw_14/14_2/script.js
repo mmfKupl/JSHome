@@ -7,7 +7,7 @@ var ctxsrc = canvassrc.getContext('2d');
 ctxsrc.drawImage(image, 0, 0);
 
 button.addEventListener('click', function () {
-    var ctxres = canvasres.getContext('2d');
+   var ctxres = canvasres.getContext('2d');
    if(list.value == 'sepia'){
        var sepia = function (imageData) {
            var pixels = imageData.data;
@@ -45,10 +45,3 @@ button.addEventListener('click', function () {
        ctxres.putImageData(imageDataFiltred, 0, 0);
    }
 });
-
-
-
-
-
-
-
