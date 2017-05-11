@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Фильтр</title>
+</head>
+
+<body>
+<div id="main">
+    <div id="value">
+        <select id="list">
+            <option value="sepia">Сепия</option>
+            <option value="black-white">Ч-Б</option>
+        </select>
+        <input id="button" type="button" value="применить">
+    </div>
+    <div>
+        <div style="display: none"><img id="img" src="ZOIDBERG.jpg" width="400" height="600"></div>
+        <canvas  id="src" width="400" height="600"></canvas>
+    </div>
+    <div>
+        <canvas  id="res" width="400" height="600"></canvas>
+    </div>
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
