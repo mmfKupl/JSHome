@@ -1,0 +1,29 @@
+#bar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 550px;
+    text-align: center;
+}
+
+#bar li {
+    display: inline;
+}
+
+#bar a {
+    padding: 2px 3px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+}
+
+#bar a:hover {
+    background-color: #E6E5E5;
+}
+
+.basket {
+    margin-left: 70% ;
+    position: fixed;
+    width: 200px;
+    height: 150px;
+}

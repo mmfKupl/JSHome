@@ -1,0 +1,14 @@
+﻿[
+	{
+		"name" : "Еда",
+		"adress" : "eat.json"
+	},
+	{
+		"name" : "Косметика",
+		"adress" : "shover.json"
+	},
+	{
+		"name" : "Мебель",
+		"adress" : "furniture.json"
+	}
+]
