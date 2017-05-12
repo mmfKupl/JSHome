@@ -1,0 +1,49 @@
+a {
+    background-size: 30px 30px;
+}
+.container{
+	 margin: 10px auto;
+	 text-align: center;
+}
+.player{
+	display: inline-block;
+	padding: 0 10px;
+}
+.player >*{
+	display: inline-block;
+	vertical-align: middle;
+}
+.play{
+	background-image: url(png/player_play.png);
+}
+.pause{
+	background-image: url(png/player_pause.png)
+}
+.stop{
+	background-image: url(png/player_stop.png)
+}
+.slower{
+	background-image: url(png/player_rew.png)
+}
+.faster{
+	background-image: url(png/player_fwd.png)
+}
+.volume{
+	background-image: url(png/player_volume.png)
+}
+.player >a{
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.progressbar{
+	width: 200px;
+	height: 10px;
+	border: 1px solid #8D1C1C;
+}
+.progress{
+	width: 0;
+	height: 100%;
+	background: #FA0000;
+}
