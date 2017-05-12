@@ -1,0 +1,125 @@
+#title{
+    color: #14177B;
+    background-color: aliceblue;
+    font-size: 30px;
+    height: 30px;
+    padding: 30px;
+
+}
+table{
+
+    border: 2px solid #14177B;
+}
+th, td{
+    border: 1px solid #14177B;
+    padding: 45px;
+    margin: 45px;
+    text-align: center;
+}
+th, td:hover{
+    border: 1.125px solid red;
+}
+#button{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    margin: -125px 0 0 -125px;
+}
+button{
+    display: table;
+    margin: 20px;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+}
+p{
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#flag{
+    height: 30px;
+    width: 40px;
+    border: 1px dashed black;
+    text-align: center;
+    margin-left: 50px;
+}
+.block {
+    height: 140px;
+    width: 250px;
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+    background-color: #FBD0D0;
+    border: 1.15px dashed #F00000;
+    box-shadow: 0px 0px 30px 0px #000;
+}
+#body{
+    margin-top: 50px;
+}
+.one{
+    background-image: url(png/1.png);
+    background-size: 90px;
+}
+.two{
+    background-image: url(png/2.png);
+    background-size: 90px;
+}
+.three{
+    background-image: url(png/3.png);
+    background-size: 90px;
+}
+.four{
+    background-image: url(png/4.png);
+    background-size: 90px;
+}
+.five{
+    background-image: url(png/5.png);
+    background-size: 90px;
+}
+.six{
+    background-image: url(png/6.png);
+    background-size: 90px;
+}
+.seven{
+    background-image: url(png/7.png);
+    background-size: 90px;
+}
+.eight{
+    background-image: url(png/8.png);
+    background-size: 90px;
+}
+.nine{
+    background-image: url(png/9.png);
+    background-size: 90px;
+}
+.ten{
+    background-image: url(png/10.png);
+    background-size: 90px;
+}
+.eleven{
+    background-image: url(png/11.png);
+    background-size: 90px;
+}
+.twelve{
+    background-image: url(png/12.png);
+    background-size: 90px;
+}
+.thirdteen{
+    background-image: url(png/13.png);
+    background-size: 90px;
+}
+.fourteen{
+    background-image: url(png/14.png);
+    background-size: 90px;
+}
+.fifteen{
+    background-image: url(png/15.png);
+    background-size: 90px;
+}
+.none{
+    background-size: 90px;
+    background-color: aliceblue;
+}
