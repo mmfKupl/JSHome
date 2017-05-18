@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+canvas {
+    border : 2px solid rgba(215,90,168,0.53);;
+}
+canvas:hover {
+    border : 2.3px solid rgb(220,110,168);
+}
+
+#main {
+    position: absolute;
+    top: 3%;
+    left: 20%;
+}
+
+div {
+    display: inline-block;
+    padding: 10px;
+}
+
+.enter{
+    background-color: lightcoral;
+}

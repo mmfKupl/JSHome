@@ -6,4 +6,7 @@
     <annotation-enable>false</annotation-enable>
     <other-services-enabled>false</other-services-enabled>
   </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Иван\AppData\Roaming\Subversion</configuration>
+  </component>
 </project>

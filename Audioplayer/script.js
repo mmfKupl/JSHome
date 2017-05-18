@@ -2,6 +2,7 @@ var audio = document.getElementsByTagName('audio')[0];
 var play = document.getElementById('play');
 var player = document.querySelector('.player');
 var interval;
+var flag = false;
 audio.addEventListener('loadedmetadata', function(){
     var time = audio.duration;
     var str;
@@ -28,11 +29,13 @@ play.addEventListener('click', function(){
         audio.play();
         this.classList.remove('play');
         this.classList.add('pause');
+        flag = true;
     }
     else{
         audio.pause();
         this.classList.remove('pause');
         this.classList.add('play');
+        flag = false;
     }
 });
 
@@ -112,4 +115,17 @@ player.querySelector('.progressbar').addEventListener('click', function(e){
     var percent = (e.clientX - left)/widthProgressbar;
     console.log(percent);
     audio.currentTime = audio.duration * percent;
+});
+
+document.addEventListener('visibilitychange', function () {
+    if(document.hidden) {
+        if(flag == true) {
+            audio.pause();
+        }
+    }
+    else{
+        if(flag == true) {
+            audio.play();
+        }
+    }
 });
