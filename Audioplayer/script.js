@@ -3,6 +3,11 @@ var play = document.getElementById('play');
 var player = document.querySelector('.player');
 var interval;
 var flag = false;
+
+window.onload = function () {
+    //console.log(localStorage.getItem('time'), audio.duration);
+};
+
 audio.addEventListener('loadedmetadata', function(){
     var time = audio.duration;
     var str;
@@ -22,7 +27,15 @@ audio.addEventListener('loadedmetadata', function(){
     }
     player.querySelector('.time').innerText = str;
 
+
+
 });
+
+audio.addEventListener("loadeddata", function(){
+    audio.currentTime = localStorage.getItem('time')*1;
+    console.log("T: "+audio.currentTime)
+});
+
 
 play.addEventListener('click', function(){
     if(this.classList.contains('play')){
@@ -73,6 +86,7 @@ player.querySelector('.range').addEventListener('input', function(){
     audio.volume = this.value;
 });
 audio.addEventListener('play', function(){
+
     interval = setInterval(function(){
         var time = audio.currentTime;
         var str;
@@ -100,6 +114,7 @@ audio.addEventListener('pause', function(){
 });
 
 audio.addEventListener('play', function(){
+
     var progress = player.querySelector('.progress');
     var interval = setInterval(function(){
         var time = audio.currentTime*100/audio.duration;
@@ -129,3 +144,7 @@ document.addEventListener('visibilitychange', function () {
         }
     }
 });
+
+window.onunload = function () {
+    localStorage.setItem('time', audio.currentTime);
+};

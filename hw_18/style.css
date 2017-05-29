@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+canvas {
+    border : 2px solid rgba(215,90,168,0.53);
+}
+div {
+    margin: 3px;
+    padding: 3px;
+    top: 5%;
+    left: 28%;
+}
+#button{
+    margin-left: 300px;
+}
+button{
+    display: inline-block;
+    background-color: rgba(38,97,181,0.44) ;
+    padding: 3px;
+    width: 100px;
+}
+button:hover{
+    background-color: rgba(38,97,181,0.52);
+}
