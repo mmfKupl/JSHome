@@ -1,0 +1,18 @@
+ipol[Symbol.iterator]=function(){
+	
+var t = this;
+	
+return{
+		
+i:0, 
+		len:t.girls.length,
+		
+next:function(){
+
+			return{ 
+				value: t.girls[this.i], 
+				done: (this.i++==this.len)
+			}
+		}
+	}
+}

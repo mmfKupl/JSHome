@@ -19,10 +19,17 @@ button.onclick = function(){
   ctx.clearRect(0, 0, 700, 700);
 };
 
-window.onunload = function () {
-    localStorage.setItem('pik', canvas.toDataURL());
-};
+// window.onunload = function () {
+//     var str = JSON.stringify(ctx.getImageData(0, 0, 700, 700));
+//     localStorage.setItem('pik', str);
+// };
 
 window.onload = function () {
-    canvas.drawImage(localStorage.getItem('pik'), 0, 0);
+    var str = JSON.stringify(ctx.getImageData(0, 0, 700, 700));
+    console.log(str);
+    console.log(JSON.parse(str));
+    console.log(localStorage.getItem('pik'));
+    var imageData = JSONE.parse(localStorage.getItem('pik'));
+    ctx.putImageData(imageData, 0, 0);
+
 };

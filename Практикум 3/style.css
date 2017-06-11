@@ -1,0 +1,65 @@
+.map {
+    border: 1px solid rgba(25, 4, 24, 0.62);
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    margin: -125px 0 0 -125px;
+    width: 500px;
+    height: 700px;
+}
+
+#map {
+    position: absolute;
+    background-color: rgba(5, 22, 17, 0.04);
+}
+
+#health {
+    background-color: rgba(255, 88, 198, 0.11);
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 377px;
+}
+
+.mainInfo {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    margin: -125px 0 0 -188px;
+}
+
+.info {
+    background-color: rgba(15,170,214,0.06);
+    height: 25px;
+    width: 60px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+* {
+    font-family: "Comic Sans MS", Comic Sans, cursive;
+}
+
+#GG {
+    height: 36px;
+    width: 160px;
+    text-align: center;
+    padding-top: 4px;
+    background-color: rgba(255,0,18,0.58);
+    position: absolute;
+    font-size: large;
+    display: none;
+    border: 2px solid #85001b;
+    top: 40%;
+    left: 59.5%;
+    margin: -125px 0 0 -124px;
+    z-index: 1;
+}
